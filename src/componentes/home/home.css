@@ -1,0 +1,106 @@
+ 
+  body {
+    background-color: #04471d;
+  }
+  
+  .home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 15px;
+  }
+  /* Estilo do menu superior */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00bf63;
+    color: white;
+    padding: 1px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+  }
+  .menu-span{
+    font-size: 25px;
+    
+  }
+  .navbar .logo img {
+    height: 40px;
+  }
+  
+  .navbar .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Layout do conteúdo abaixo do menu */
+  .container {
+    display: flex;
+    flex: 1;
+    margin-top: 80px; /* Espaço para o menu fixo */
+    padding: 20px;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: white;
+    margin-right: 30px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .panel {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .panel-item {
+    height: 94px;
+    width: 164px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+  
+  .panel-item-1 {
+    background-color: #00bf63;
+  }
+  
+  .panel-item-2 {
+    background-color: #ff5757;
+  }
+  
+  .panel-item-3 {
+    background-color: #70bf99;
+  }
+  
+  /* Componente principal */
+  .main-content {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .sidebar {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .main-content {
+      width: 100%;
+    }
+  }
+  
